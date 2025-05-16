@@ -14,4 +14,6 @@ export class BasePage {
   async getText(selector: string) {
     return await this.page.textContent(selector);
   }
+
+  
 }
