@@ -18,14 +18,14 @@ export class FormPage extends BasePage {
 
   constructor(page: Page) {
     super(page);
-    this.firstName = page.locator('#firstName');
-    this.lastName = page.locator('#lastName');
+    this.firstName = page.getByPlaceholder('First Name');
+    this.lastName = page.getByPlaceholder('Last Name');
     this.email = page.locator('#userEmail');
-    this.mobileNumber = page.locator('#userNumber');
+    this.mobileNumber = page.getByPlaceholder('Mobile Number');
     this.dateOfBirthInput = page.locator('#dateOfBirthInput');
     this.subjectInput = page.locator('#subjectsInput');
     this.uploadPicture = page.locator('#uploadPicture');
-    this.currentAddress = page.locator('#currentAddress');
+    this.currentAddress = page.getByPlaceholder('Current Address');
     this.stateDropdown = page.locator('#state');
     this.cityDropdown = page.locator('#city');
     this.submitButton = page.locator('#submit');

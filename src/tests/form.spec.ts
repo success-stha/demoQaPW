@@ -81,7 +81,7 @@ test.describe('Form Tests', () => {
     await formPage.submitForm();
 
     console.log('Verifying modal');
-    await expect(formPage.modalTitle).toHaveText('Thanks for submitting the form');
+    await expect(formPage.modalTitle,'Message should be shown').toHaveText('Thanks for submitting the form');
     await formPage.closeModal();
     console.log('Form submitted successfully with multiple subjects.');
   });
@@ -103,7 +103,7 @@ test.describe('Form Tests', () => {
 
     const firstNameValue = await formPage.getFirstNameValue();
     console.log('First name after navigation:', firstNameValue);
-    await expect(firstNameValue).toBe('');
+    await expect(firstNameValue,'Form should reset').toBe('');
     console.log('Form reset verified after navigation.');
   });
 
