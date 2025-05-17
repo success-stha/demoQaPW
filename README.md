@@ -4,7 +4,7 @@ This project contains automated test cases using **Playwright** for the [DemoQA]
 
 1. **Form Functionality** - UI tests on the Practice Form  
 2. **Web Tables** - UI tests for performing CRUD operations  
-3. **Books API** - API tests for book-related endpoints# 📘 DemoQA Playwright Automation Project
+3. **Books API** - API tests for book-related endpoints
 
 
 ## Installation
