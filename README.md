@@ -11,16 +11,18 @@ This project contains automated test cases using **Playwright** for the [DemoQA]
 
 1. **Clone the Repository**
 
-2. **Install Dependencies** - npm install
+2. **Install Dependencies**
+   <pre> npm install </pre>
    
-3. **Install Playwright Browsers** - npx playwright install
+4. **Install Playwright Browsers**
+   <pre> npx playwright install </pre>
 
 ## Run Tests
 
 **All Tests**
-npx playwright test
+<pre> npx playwright test </pre>
 
 **Run a Specific Test File**
-npx playwright test src/tests/form.spec.ts
-npx playwright test src/tests/table.spec.ts
-npx playwright test src/tests/bookapi.spec.ts
+<pre> npx playwright test src/tests/form.spec.ts </pre> 
+<pre> npx playwright test src/tests/table.spec.ts </pre>  
+<pre> npx playwright test src/tests/bookapi.spec.ts </pre>
